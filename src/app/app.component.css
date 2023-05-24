@@ -1,0 +1,67 @@
+.container{
+    display:flex; 
+    height: 100%;
+}
+app-left-nav{
+    width: 270px;
+    background-color: #fff;
+    position: fixed;
+    height: 100%;
+}
+.content.leftMenuOpen{
+    margin-left: 270px;
+    transition: margin 700ms;
+}
+.content.leftMenuClose{
+    margin-left: 60px;
+    transition: margin 700ms;
+    
+}
+.content{
+    width: 100%;
+    border-left: 3px solid #a19fab3b;
+    margin-left: 270px;
+    background-color: #f9f9f9;
+    overflow-y: auto;
+    z-index: 10;
+}
+app-top-nav{
+    background-color: white;
+    display: flex;
+    padding-left: 40px;
+}
+/* header section */
+.content-header{
+    display: flex;
+    padding: 20px 40px;
+}
+.search-div{
+    padding: 0 40px;
+}
+h1{
+    font-family:Open Sans, sans-serif;
+    font-weight: 700;
+    margin: 0;
+    line-height: 40px;
+}
+.content-header a{
+    margin-left: auto;
+    padding: 11px 20px;
+    font-size: 17px;
+    height: fit-content;
+    background-color: #2751bf;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.content-header a:hover{
+    background-color: #3563d8;
+    font-weight: 500;
+}
+
+::ng-deep .mdc-text-field, ::ng-deep .mat-mdc-text-field-wrapper{
+    padding-left: 30px!important;
+}
+.linkDialog{
+    padding: 20px!important;
+}

@@ -1,0 +1,17 @@
+.search-form {
+    min-width: 350px;
+    width: 50%;
+  }
+  
+  .search-full-width {
+    width: 100%;
+  }
+  input{
+    background-color: transparent;
+  }
+.search-icon{
+    position: fixed;
+    left: 0px;
+    top: 16px;
+    font-size: 28px;
+}

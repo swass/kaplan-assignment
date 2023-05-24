@@ -1,0 +1,3 @@
+<div class="container" *ngIf="contentLoaded">
+    <app-book-item *ngFor="let item of displayItems" class="card" [bookData] = "item"></app-book-item>
+</div>

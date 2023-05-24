@@ -1,0 +1,24 @@
+<div class="navContent">
+<ul>
+    <li (click)="toggleLeftNav()">
+        <img src="../../assets/icon1.png"
+        title="MENU" />
+        MENU</li>
+    <li class="expand" (click)="expandSubMenu()" title="CONTENT MANAGEMENT">
+        <img src="../../assets/icon2.png" />
+        <span>CONTENT MANAGEMENT</span>
+        <i *ngIf="!subMenuExpanded" class="material-icons expand-icon">keyboard_arrow_down</i>
+        <i *ngIf="subMenuExpanded" class="material-icons expand-icon">keyboard_arrow_up</i>   
+    </li>
+    <ul *ngIf="subMenuExpanded" class="expanded-menu">
+        <li title="Submenu 1">Submenu 1</li>
+        <li title="Submenu 2">Submenu 2</li>
+    </ul>
+    <li title="COURSES">
+        <img src="../../assets/icon3.png" />
+        COURSES
+    </li>
+</ul>
+<i (click)="toggleLeftNav()" *ngIf="!leftNavState" class="material-icons expand-arrow">arrow_forward_ios</i>
+<i (click)="toggleLeftNav()" *ngIf="leftNavState" class="material-icons collapse-arrow">arrow_back_ios</i>
+</div>

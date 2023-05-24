@@ -1,0 +1,7 @@
+<form class="search-form">
+    <mat-form-field class="search-full-width">
+      <mat-label>Search</mat-label>
+      <input type="search" matInput [formControl]="searchFormControl" (keydown.enter)="searchText()" (keyup)="searchText()" >
+      <i class="material-icons search-icon">search</i>
+    </mat-form-field>
+</form>

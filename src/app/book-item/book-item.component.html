@@ -1,0 +1,14 @@
+<div (click)="toggleCard()">
+    <p class="card-title">{{ title}}</p>
+    <p class="card-content">Authors: {{ author }}</p>
+    <p class="card-content">Publisher: {{ publisher }}</p>
+    <p class="card-content">Published Date: {{ publishedDate }} </p>
+</div>
+<div *ngIf="cardOpen" (click)="toggleCard()" class="popup-card-screen">
+    <div class="popup-card">
+        <p class="card-title">{{ title}}</p>
+        <p class="card-content">Authors: {{ author }}</p>
+        <p class="card-content">Publisher: {{ publisher }}</p>
+        <p class="card-content">Published Date: {{ publishedDate }} </p>
+    </div>
+</div>

@@ -1,0 +1,24 @@
+<div class="container">
+  <app-left-nav 
+  (leftNavStateChange) = "onLeftNavStateChange($event)"
+  >
+  </app-left-nav>
+
+  <div class="content" [ngClass] = "leftMenuState?'leftMenuOpen':'leftMenuClose'">
+    <app-top-nav></app-top-nav>
+
+    <div class="content-header">
+      <h1>Books</h1>
+      <a mat-button (click)="openDialog()">Create New Book</a>
+    </div>
+
+    <div class="search-div">
+      <app-search></app-search>
+    </div>
+    
+    <app-books-container>
+      <app-book-item></app-book-item>
+    </app-books-container>
+  </div>
+</div>
+
