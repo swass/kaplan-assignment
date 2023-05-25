@@ -26,7 +26,7 @@ describe('BookItemComponent', () => {
     const title="Test Title";
     const author = 'Test author';
     const publisher = 'Test publisher';
-    const publishedDate = new Date();
+    const publishedDate = '';
 
     // Act
     component.title = title;
