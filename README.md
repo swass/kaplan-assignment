@@ -23,14 +23,14 @@ Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.
 ## Code details
 Components Used:
 ### 1.App Component
-       LeftNavComponent: used to create and handle the collapsable left navigation.
-       TopNavComponent: used to create the top navigation bar. It has the company logo. Created seperate component to keep the header standalone and re-usable.
-       SearchComponent: used to create the search block and it emits the search event on typing anything in the searchbox.
-       BooksContainerComponent : subscribe to the service and gets the api data in 'items' array. Loop through the array and pass each item to the child component        'BookItemComponent'. Three arrays are used.
-            # items is to store api data.
-            # displayItems to store which items to store if searchbox is empty/or default case
-            # filteredItems to store filtered items to dispaly based on the search criteria.
-	     BookItemComponent uses Input and gets the book data to displya as a card. it displays the data in a card and if any card is clicked, it displays that card         data in a popup. toggleCard function is used to check the status and display the card in popup if clicked.
+LeftNavComponent: used to create and handle the collapsable left navigation.
+TopNavComponent: used to create the top navigation bar. It has the company logo. Created seperate component to keep the header standalone and re-usable.
+SearchComponent: used to create the search block and it emits the search event on typing anything in the searchbox.
+BooksContainerComponent : subscribe to the service and gets the api data in 'items' array. Loop through the array and pass each item to the child component       'BookItemComponent'. Three arrays are used.
+items is to store api data.
+displayItems to store which items to store if searchbox is empty/or default case
+filteredItems to store filtered items to dispaly based on the search criteria.
+BookItemComponent uses Input and gets the book data to displya as a card. it displays the data in a card and if any card is clicked, it displays that card         data in a popup. toggleCard function is used to check the status and display the card in popup if clicked.
 
 ## Services used:
   ### BooksContentService 
