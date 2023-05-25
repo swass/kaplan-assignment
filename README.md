@@ -22,7 +22,7 @@ Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.
 ************************************************************************************
 ## Code details
 Components Used:
-# 1.App Component
+### 1.App Component
        LeftNavComponent: used to create and handle the collapsable left navigation.
        TopNavComponent: used to create the top navigation bar. It has the company logo. Created seperate component to keep the header standalone and re-usable.
        SearchComponent: used to create the search block and it emits the search event on typing anything in the searchbox.
@@ -33,8 +33,8 @@ Components Used:
 	     BookItemComponent uses Input and gets the book data to displya as a card. it displays the data in a card and if any card is clicked, it displays that card         data in a popup. toggleCard function is used to check the status and display the card in popup if clicked.
 
 ## Services used:
-  # BooksContentService 
+  ### BooksContentService 
     used to call the api and get data. It has a function 'getAPIData' that returns the API data as observable.
-  # SearchBookService 
+  ### SearchBookService 
     used to implement search functionality in the page. It has a functions 'emitSearchEvent' that emits the event with the text typed in search box.
 
