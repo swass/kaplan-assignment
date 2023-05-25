@@ -21,8 +21,9 @@ Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.
 
 ************************************************************************************
 ## Code details
-Components Used:
-### 1.App Component
+## Components Used:
+App Component
+
 LeftNavComponent: used to create and handle the collapsable left navigation.
 
 TopNavComponent: used to create the top navigation bar. It has the company logo. Created seperate component to keep the header standalone and re-usable.
